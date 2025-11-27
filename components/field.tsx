@@ -6,12 +6,12 @@ export function Field({
   label,
   children,
 }: {
-  label: string;
+  label?: string;
   children: ReactNode;
 }) {
   return (
     <div className="space-y-2">
-      <Label>{label}</Label>
+      {label && <Label>{label}</Label>}
       {children}
     </div>
   );

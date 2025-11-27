@@ -99,8 +99,10 @@ export function useQrBuilder(qrType: QRContentType) {
   return {
     content,
     setContent,
+    payload,
     qrImage,
     status,
+    setStatus,
     isGenerating,
     isDownloading,
     isSaving,
