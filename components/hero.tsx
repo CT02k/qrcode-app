@@ -61,18 +61,18 @@ export function Hero() {
 
   return (
     <div className="flex flex-col gap-12 lg:flex-row justify-between items-center px-6 lg:px-24 py-16">
-      <div className="flex flex-col max-w-xl">
+      <div className="flex flex-col max-w-xl gap-6">
         <div className="size-12 rounded-lg p-0.5 bg-gradient-to-br from-black via-rose-500 to-black">
           <div className="size-full bg-zinc-950/75 border border-rose-900 rounded-lg flex items-center justify-center">
             <QrCode className="text-rose-500" size={28} />
           </div>
         </div>
 
-        <h1 className="text-5xl bg-clip-text text-transparent bg-gradient-to-br from-rose-100 via-rose-500 to-rose-100 mt-5 font-semibold">
-          Create and manage dynamic QR Codes
-        </h1>
-
-        <p className="text-xl mt-5">...</p>
+        <div>
+          <h1 className="text-5xl bg-clip-text text-transparent bg-gradient-to-br from-rose-100 via-rose-500 to-rose-100 font-semibold leading-tight">
+            Create and manage dynamic QR Codes
+          </h1>
+        </div>
 
         <GetStartedButton />
       </div>
@@ -118,7 +118,7 @@ export function Hero() {
                     <div className="space-y-1">
                       <p className="text-sm text-rose-50">Dynamic QR</p>
                       <p className="text-xs text-rose-100/60">
-                        Redirects to the dashboard with your QR details.
+                        Create a dynamic QR Code.
                       </p>
                     </div>
                     <button
